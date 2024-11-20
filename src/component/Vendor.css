@@ -1,0 +1,337 @@
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    width: 260px;
+    background-color: #1a1a1a;
+    color: white;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  
+  .seller-info {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1.5rem;
+  }
+  
+  .shop-name {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+    color: white;
+  }
+  
+  .shop-email {
+    font-size: 0.875rem;
+    color: #00ff00;
+    margin: 0.25rem 0 0 0;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #909090;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .nav-item.active {
+    background-color: rgba(0, 255, 0, 0.1);
+    color: #00ff00;
+  }
+  
+  .main-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9fafb;
+  }
+  
+  /* Update your existing styles */
+  .header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 1.5rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem;
+    flex: 1;
+  }
+  
+  /* Header Styles */
+  .header {
+    background-color: white;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .logo {
+    height: 2rem;
+  }
+  
+  .orders-title {
+    color: #2563eb;
+    font-weight: 600;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Search Styles */
+  .search-container {
+    position: relative;
+  }
+  
+  .search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: #9ca3af;
+  }
+  
+  .search-input {
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    width: 16rem;
+  }
+  
+  /* User Profile Styles */
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .user-avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+  }
+  
+  .user-name {
+    font-weight: 500;
+  }
+  
+  .user-role {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    padding: 1.5rem;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Header Styles */
+  .card-header {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tab-list {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .tab-button {
+    padding: 0.5rem 1rem;
+    color: #6b7280;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  
+  .tab-button.active {
+    color: #2563eb;
+    border-bottom: 2px solid #2563eb;
+  }
+  
+  .header-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .filter-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+  }
+  
+  .download-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .download-icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  /* Table Styles */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .orders-table th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #6b7280;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .orders-table td {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: #374151;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .orders-table tr:hover {
+    background-color: #f9fafb;
+  }
+  
+  /* Status Badge Styles */
+  .status-badge {
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+  }
+  
+  .status-badge.received {
+    background-color: #feeddb;
+    color: #ea580c;
+  }
+  
+  .status-badge.transit {
+    background-color: #dbeafe;
+    color: #2563eb;
+  }
+  
+  .status-badge.pending {
+    background-color: #fef3c7;
+    color: #d97706;
+  }
+  
+  .status-badge.paid {
+    background-color: #dcfce7;
+    color: #16a34a;
+  }
+  
+  .time-left {
+    color: #2563eb;
+  }
+  
+  .action-icon {
+    width: 1rem;
+    height: 1rem;
+    color: #9ca3af;
+    cursor: pointer;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .showing-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .page-numbers {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .page-button {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.25rem;
+    background: none;
+    color: #6b7280;
+    cursor: pointer;
+  }
+  
+  .page-button.active {
+    background-color: #2563eb;
+    color: white;
+  }
+  
+  /* Select Styles */
+  .language-select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+  }

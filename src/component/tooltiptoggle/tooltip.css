@@ -1,0 +1,54 @@
+.track-button-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+  }
+  
+  .track-button-icon:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .tracking-tooltip {
+    position: fixed;
+    background: #374151;
+    color: white;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;
+  }
+  
+  /* Add arrow to tooltip */
+  .tracking-tooltip::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent #374151 transparent;
+  }
+  
+  /* Animation for tooltip */
+  @keyframes tooltipFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .tracking-tooltip {
+    animation: tooltipFadeIn 0.2s ease-out;
+  }
